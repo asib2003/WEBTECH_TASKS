@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Registration Form</title>
+</head>
+<body>
+    <h1>Library Membership Registration Form</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>personal information</legend>
+            <label for="Fullname">Full Name:</label>
+            <input type="text" id="Fullname" name="Fullname" placeholder="Enter your full name" required>
+            
+            <br><br>
+            
+            <label for="MemberID">Member ID:</label>
+            <input type="text" id="MemberID" name="MemberID" placeholder="Enter your member ID" required> 
+            <br><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" placeholder="Enter your email address" required> 
+            <br><br>
+            <label for="PhoneNumber">Phone Number:</label>
+            <input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Enter your phone number" required> 
+            <br><br>
+            <label for="Date Of Birth">Date of Birth:</label>
+            <input type="date" id="Date Of Birth" name="Date Of Birth" placeholder="YYYY-MM-DD" required> 
+            <br><br>
+            Gender:
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="Other">
+            <label for="other">Other</label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Membership information</legend>
+            <label for="MembershipType">Membership Type:</label>
+            <select id="MembershipType" name="MembershipType" required>
+                <option value="">Select...</option>
+                <option value="student">Student</option>
+                <option value="faculty">Faculty</option>
+                <option value="Researcher">Researcher</option>
+                <option value="General Member
+">General Member</option>
+
+
+            </select>
+            <br><br>
+
+            <label for="preferred_section">Preferred Library Section: </label>
+                    <select id="preferred_section" name="preferred_section" required>
+                        <option value="">Select Preferred Section</option>
+                        <option value="Science & Technology">Science & Technology</option>
+                        <option value="Literature">Literature</option>
+                        <option value="Business Studies">Business Studies</option>
+                        <option value="History">History</option>
+                        <option value="Arts & Culture">Arts & Culture</option>
+                    </select> <br><br>
+
+                    <label>Reading Preference Section:</label><br>
+                    <input type="checkbox" id="fiction" name="reading_preference" value="fiction" required>
+                    <label for="fiction">Fiction</label><br>
+                    <input type="checkbox" id="non-fiction" name="reading_preference" value="non-fiction">
+                    <label for="non-fiction">Non-Fiction</label><br>
+                    <input type="checkbox" id="science" name="reading_preference" value="science">
+                    <label for="science">Science</label><br>
+                    <input type="checkbox" id="technology" name="reading_preference" value="technology">
+                    <label for="technology">Technology</label><br>
+                    <input type="checkbox" id="biography" name="reading_preference" value="biography">
+                    <label for="biography">Biography</label><br><br>
+
+
+        </fieldset>
+
+
+    <fieldset>
+        <legend>Library services</legend>
+        <label for="services"></label>Select Services You Want to Use:</label>
+            <select id="services" name="services" required>
+                <option value="">Select...</option>
+                <option value="Book Borrowing">Book Borrowing</option>
+                <option value="Digital Library Access">Digital Library Access</option>
+                <option value="Reading Room">Reading Room</option>
+                <option value="Research Assistance">Research Assistance</option>
+
+
+            </select>
+            <br><br>
+        
+    </fieldset>
+    <fieldset>
+            <legend>Additional Information</legend>
+            <label for="address">Current Address:</label><br>
+            <textarea id="address" name="address" placeholder="Enter your current address" rows="3" required></textarea><br><br>
+ 
+            <label for="emergencyContact">Emergency Contact Number:</label><br>
+            <input type="tel" id="emergencyContact" name="emergencyContact" placeholder="Enter emergency contact number" required><br><br>
+ 
+            <label for="reason">Reason for Joining the Library:</label><br>
+            <textarea id="reason" name="reason" placeholder="Tell us why you want to join" rows="3" required></textarea><br><br>
+ 
+            <label for="suggestions">Suggestions for Library Improvement:</label><br>
+            <textarea id="suggestions" name="suggestions" placeholder="Share your suggestions" rows="4" maxlength="250"></textarea><br>
+        </fieldset>
+ 
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    
+
+    </form>
+</body>
+</html>
+
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>
