@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Fixed Contact Us button */
+        .contact-fixed {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+            font-size: 14px;
+            z-index: 1000;
+        }
+        .contact-fixed:hover { background: #0056b3; }
+    </style>
+</head>
+        <h1>ABC College</h1>
+        <nav>
+            
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#admissions">Admissions</a>
+                <a href="#courses">Academics</a>
+                <a href="#contact">Contact</a>
+            
+        </nav>
+    </header>
+     <section id="home" class="welcome">
+        <h2>Welcome to ABC College</h2>
+        <p>Here in ABC College we empower students with quality education and hands-on experience to build successful careers.</p>
+        <p><button type="button">Apply Now</button></p>
+    </section>
+
+    
+    <section id="courses" class="course-section">
+        <h2>Courses</h2>
+        <div class="course-cards">
+            
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, and JavaScript to build modern responsive websites.</p>
+            
+            
+                <h3>Data Science</h3>
+                <p>Explore data analysis, visualization, and machine learning fundamentals.</p>
+           
+            
+                <h3>Business Management</h3>
+                <p>Study leadership, strategy, and operations for a successful career in business.</p>
+
+        </div>
+    </section>
+
+    <section id="campus" class="campus-section">
+        <h2>Campus</h2>
+        <div class="campus-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvExDxP-iwOlS8qmrLb5wr31GZvlcuFmQEQlnGxYJ2A&s=10" alt="Campus Image" class="campus-image">
+            <div class="campus-info">
+                <h3>State-of-the-Art Facilities</h3>
+                <p>Our modern campus features cutting-edge laboratories, libraries, and recreational facilities designed for student success.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer id="contact" class="site-footer">
+        <div class="footer-content">
+            <h3>ABC College</h3>
+            <p>Email: info@abccollege.edu</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+
+    <button class="contact-fixed" onclick="window.location.href='#contact'">Contact Us</button>
+
+</body>
+</html>
