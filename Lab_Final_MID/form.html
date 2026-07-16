@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h2>Doctor Appointment Form</h2>
+
+        <p id = "successMessage"  class = "success-message"></p>
+        <form id="myForm" novalidate>
+            <label for = "firstName"> First Name</label>
+            <input type="text"
+                   id="firstName"
+                   placeholder="Enter your first name">
+
+            <small id="firstNameError" class="error"></small>
+            <label for = "lastName"> Last Name</label>
+
+            <input type="text"
+                   id="lastName"
+                   placeholder="Enter your last name">
+
+            <small id="lastNameError" class="error"></small>
+            <label for = "email">Email</label>
+
+            <input type="email"
+                   id="email"
+                   placeholder="example@gmail.com">
+
+            <small id="emailError" class="error"></small>
+            <label for = "password">Password</label>
+
+            <input type="password"
+                   id="password"
+                   placeholder="Enter password">
+
+            <small id="passwordError" class="error"></small>
+            <label for = "confirmPassword">
+                Confirm Password
+            </label>
+
+            <input type="password"
+                   id="confirmPassword"
+                   placeholder="Enter password again">
+
+            <small id="confirmPasswordError"
+                   class="error"></small>
+            <div class="checkbox-group">
+
+                <input type="checkbox"
+                       id="showPassword">
+
+                <label for="showPassword">
+                    Show Password
+                </label>
+
+            </div>
+            <label>Gender</label>
+
+            <div class="option-group">
+
+                <input type="radio"
+                       id="male"
+                       name="gender"
+                       value="Male">
+
+                <label for = "male">Male</label>
+                <input type = "radio"
+                       id = "female"
+                       name = "gender"
+                       value = "Female">
+                <label for = "female">Female</label>
+                <input type = "radio"
+                       id = "other"
+                       name = "gender"
+                       value="Other">
+                <label for="other">Other</label>
+
+            </div>
+            <small id="genderError" class="error"></small>
+            <label>Preferred Service</label>
+            <div class="checkbox-group">
+                <input type="checkbox"
+                       id="consultation"
+                       name="service"
+                       value="General Consultation">
+
+                <label for="consultation">
+                    General Consultation
+                </label>
+                <input type="checkbox"
+                       id="checkup"
+                       name="service"
+                       value="Health Checkup">
+
+                <label for="checkup">
+                    Health Checkup
+                </label>
+                <input type="checkbox"
+                       id ="emergency"
+                       name="service"
+                       value="Emergency Service">
+
+                <label for="emergency">
+                    Emergency
+                </label>
+
+            </div>
+            <small id="serviceError" class="error"></small>
+            <label for="department">
+                Doctor's Department
+            </label>
+            <select id="department">
+
+                <option value="">
+                    -- Select Department --
+                </option>
+                <option value="Cardiology">
+                    Cardiology
+                </option>
+
+                <option value="Neurology">
+                    Neurology
+                </option>
+
+                <option value="Dermatology">
+                    Dermatology
+                </option>
+
+                <option value="Orthopedics">
+                    Orthopedics
+                </option>
+
+                <option value="General Medicine">
+                    General Medicine
+                </option>
+            </select>
+            <small id="departmentError" class="error"></small>
+            <label for="healthDescription">
+                Health Description
+            </label>
+
+            <textarea id="healthDescription"
+                      rows="5"
+                      placeholder="Describe your health problem"></textarea>
+
+            <small id="healthDescriptionError"
+                   class="error"></small>
+            <button type="submit">
+                Register Appointment
+            </button>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
